@@ -1,6 +1,6 @@
 cask "spum-app" do
-  version "0.2.1"
-  sha256 "a22324151c0dffa511744e06f1e803afa46774dced9afc9e7f869be81db4d6b7"
+  version "0.2.2"
+  sha256 "dad3f3fa1a6af4a83db5e3317b934cedcf708f41c0d22a094e15768f94c7ea6f"
   url "https://nsimaging.ai/spum/releases/Spum-#{version}-macOS-arm64.dmg"
   name "Spum"
   desc "Standalone local inference app for biomedical instruments"
