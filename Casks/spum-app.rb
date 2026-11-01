@@ -7,7 +7,7 @@ cask "spum-app" do
   homepage "https://nsimaging.ai/spum/"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Spum.app"
 end
