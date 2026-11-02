@@ -1,9 +1,9 @@
 class Spum < Formula
-  desc "Local inference for language, images and biomedical instruments"
+  desc "Local language, image and speech inference for biomedical instruments"
   homepage "https://spum.si/"
-  url "https://nsimaging.ai/spum/releases/spum-0.2.2-macos-arm64.tar.gz"
-  version "0.2.2"
-  sha256 "65d841e6b13cee638108616a452be4eb47f0df5ef72a419dfc1652cc6240c2d4"
+  url "https://nsimaging.ai/spum/releases/spum-0.2.3-macos-arm64.tar.gz"
+  version "0.2.3"
+  sha256 "ebf325321e5e2813307cd75781fad3b6f52f79a96fd5d6aace7a30734c132682"
   license "MIT"
 
   depends_on :macos
@@ -14,10 +14,13 @@ class Spum < Formula
 
   def install
     bin.install "spum"
+    libexec.install "spum-runtime"
+    pkgshare.install "licenses", "THIRD_PARTY_NOTICES.md", "speech-runtime-third-party-sources.tar.gz"
     prefix.install "LICENSE"
   end
 
   test do
     assert_match "spum #{version}", shell_output("#{bin}/spum --version")
+    assert_match "whisper-base-en", shell_output("#{bin}/spum models catalog --json")
   end
 end
