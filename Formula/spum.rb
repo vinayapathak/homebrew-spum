@@ -3,7 +3,8 @@ class Spum < Formula
   homepage "https://spum.si/"
   url "https://nsimaging.ai/spum/releases/spum-0.2.4-macos-arm64.tar.gz"
   version "0.2.4"
-  sha256 "d601ed35f999f4b50deef818693d7ac909a1e519a168c31b5545e382d7acab60"
+  revision 1
+  sha256 "3778cb3ace8070f997b83c63ebfdc71e874c24fe747fbb24085150f3bd972911"
   license "MIT"
 
   depends_on :macos
