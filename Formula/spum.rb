@@ -1,10 +1,9 @@
 class Spum < Formula
   desc "Local language, image and speech inference for biomedical instruments"
   homepage "https://spum.si/"
-  url "https://nsimaging.ai/spum/releases/spum-0.2.3-macos-arm64.tar.gz"
-  version "0.2.3"
-  revision 1
-  sha256 "ebf325321e5e2813307cd75781fad3b6f52f79a96fd5d6aace7a30734c132682"
+  url "https://nsimaging.ai/spum/releases/spum-0.2.4-macos-arm64.tar.gz"
+  version "0.2.4"
+  sha256 "d601ed35f999f4b50deef818693d7ac909a1e519a168c31b5545e382d7acab60"
   license "MIT"
 
   depends_on :macos
